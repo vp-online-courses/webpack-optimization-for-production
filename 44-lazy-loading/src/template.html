@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>To Do List Application</title>
+    </head>
+    <body>
+        <img class="header-image" src="../images/header-image.jpg" alt="To Do List" />
+        <h1>To Do List</h1>
+        <div class="todolist-wrapper">
+            <input class="new-todo" placeholder="Enter text here" autofocus />
+            <ul class="todo-list"></ul>
+        </div>
+        
+        <div class="modal fade" id="modal-delete-todo" tabindex="-1" aria-labelledby="modalDeleteTodo" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Do you really want to delete this todo?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" id="modal-delete-button">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

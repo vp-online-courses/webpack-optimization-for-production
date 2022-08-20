@@ -1,0 +1,10 @@
+/* purgecss ignore */
+.notification {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    margin-bottom: 0;
+}

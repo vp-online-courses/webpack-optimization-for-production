@@ -1,0 +1,17 @@
+{
+  "name": "webpack-optimization-for-production",
+  "version": "1.0.0",
+  "description": "Github Repository for the course: Webpack 5 in 2022: Optimizing For Production",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Viktor Pyskunov",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  }
+}

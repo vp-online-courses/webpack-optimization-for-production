@@ -1,0 +1,105 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font: 18px 'Helvetica Neue', Helvetica, Arial;
+    background-color: $body-background-color;
+    color: $font-color;
+    font-weight: 300;
+
+    
+}
+
+.header-image {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+h1 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 80px;
+    margin: 50px 0;
+}
+
+.todolist-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: $todolist-background-color;
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+    
+    .new-todo {
+        margin: 0;
+        width: 100%;
+        font-family: 'Helvetica Neue';
+        font-size: 24px;
+        font-weight: 300;
+        padding: 16px;
+        border: none;
+        border-bottom: 1px solid $border-color;
+        outline: none;
+    }
+
+    .todo-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            border-bottom: 1px solid $border-color;
+
+            .custom-checkbox {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                margin-left: 15px;
+                border: 1px solid $checkbox-border-color;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    display: none;
+                }
+
+                
+            }
+
+            &.completed .custom-checkbox img {
+                display: block;
+            }
+
+            label {
+                flex: 1;
+                word-break: break-all;
+                white-space: pre-wrap;
+                margin: 0;
+                padding: 15px;
+            }
+
+            .delete {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                cursor: pointer;
+                visibility: hidden;
+                /* background: url("../../images/delete.png") center no-repeat; */
+                background-size: 90%;
+            }
+
+            &:hover .delete {
+                visibility: visible;
+            }
+        }
+    }
+}
