@@ -6,7 +6,7 @@ module.exports = merge(common, {
     mode: 'development',
     output: {
         filename: 'bundle.js'
-    }
+    },
     devServer: {
         port: 9000,
         static: {
