@@ -32,9 +32,11 @@ module.exports = merge(common, {
             maxSize: 140000,
             minSize: 50000,
             name(module, chunks, cacheGroupKey) {
+                // figure out file path separator
+                const pathSeparator = module.identifier().includes('\\') ? '\\' : '/';
                 const filePathAsArray = module
                     .identifier()
-                    .split('/')
+                    .split(pathSeparator);
                 return filePathAsArray[filePathAsArray.length - 1];
             }
         }
