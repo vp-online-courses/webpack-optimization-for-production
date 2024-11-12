@@ -1,4 +1,4 @@
-import styles from '../styles/notification.module.css'
+import { notification } from '../styles/notification.module.css'
 import { css } from '@emotion/css'
 import CheckmarkImage from '../../images/checkmark.svg'
 import { getMotivationalPictures } from './api'
@@ -48,13 +48,13 @@ export function getTodoId(element) {
 
 function showNotification() {
     const notificationElement = document.createElement('div');
-    notificationElement.classList.add('alert', 'alert-success', styles.notification);
+    notificationElement.classList.add('alert', 'alert-success', notification);
     notificationElement.setAttribute('role', 'alert');
     notificationElement.innerHTML = 'Todo item added';
     document.body.appendChild(notificationElement);
     // And we are going to remove this div after 2 seconds.
     setTimeout(function () {
-        const notificationElement = document.querySelector(`.${styles.notification}`)
+        const notificationElement = document.querySelector(`.${notification}`)
         notificationElement.parentNode.removeChild(notificationElement)
     }, 2000)
 }
