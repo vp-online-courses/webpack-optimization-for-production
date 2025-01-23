@@ -53,7 +53,19 @@ module.exports = merge(common, {
             },
             {
                 test: /\.scss$/,
-                use: [ 'style-loader', 'css-loader', 'sass-loader' ],
+                use: [ 
+                    'style-loader', 
+                    'css-loader',  
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sassOptions: {
+                                quietDeps: true,
+                                silenceDeprecations: ['import'],
+                            },
+                        },
+                    },
+                ],
             },
             {
                 test: /\.(png|jpg|svg)$/,

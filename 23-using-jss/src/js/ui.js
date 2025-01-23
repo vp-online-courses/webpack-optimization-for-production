@@ -1,6 +1,6 @@
 import jss from 'jss'
 import preset from 'jss-preset-default'
-import styles from '../styles/notification.module.css'
+import * as styles from '../styles/notification.module.css'
 
 jss.setup(preset())
 

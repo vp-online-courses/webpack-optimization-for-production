@@ -1,4 +1,4 @@
-import styles from '../styles/notification.module.css'
+import * as styles from '../styles/notification.module.css'
 import { css } from '@emotion/css'
 
 const checkboxSize = '30px'

@@ -83,7 +83,20 @@ module.exports = merge(common, {
             },
             {
                 test: /\.scss$/,
-                use: [ MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader' ],
+                use: [ 
+                    MiniCssExtractPlugin.loader, 
+                    'css-loader', 
+                    'postcss-loader', 
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sassOptions: {
+                                quietDeps: true,
+                                silenceDeprecations: ['import'],
+                            },
+                        },
+                    } 
+                ],
             },
             {
                 test: /\.(png|jpg|svg)$/,

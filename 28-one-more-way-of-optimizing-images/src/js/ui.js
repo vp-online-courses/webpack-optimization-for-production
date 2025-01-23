@@ -1,4 +1,4 @@
-import styles from '../styles/notification.module.css'
+import * as styles from '../styles/notification.module.css'
 import { css } from '@emotion/css'
 import CheckmarkImage from '../../images/checkmark.svg'
 
