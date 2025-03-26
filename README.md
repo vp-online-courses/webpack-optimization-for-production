@@ -2,7 +2,7 @@
 
 This repository was designed to help you with learning Webpack.
 
-This repository is a supplementary resource to the course [Webpack 5 in 2022: Optimizing For Production](https://www.udemy.com/course/webpack-optimizing-for-production/?referralCode=B71C38561B63DF0E2633)
+This repository is a supplementary resource to the course [Webpack 5: Optimizing For Production](https://www.udemy.com/course/webpack-optimizing-for-production/?referralCode=B71C38561B63DF0E2633)
 
 If you want to get a discount (up to 70%) on one of my other courses, feel free to send me an email at vp.online.courses@gmail.com, and I will try to get the best offer for you.
 
